@@ -23,6 +23,10 @@ public class ScheduleController {
     public ScheduleEntity createSchedule(@RequestBody ScheduleEntity schedule){
         return scheduleService.createSchedule(schedule);
     }
+    @DeleteMapping("/{id}")
+    public void deleteSchedule(@PathVariable Long id){
+        scheduleService.deleteSchedule(id);
+    }
 }
 //criar uma classe de user controller e vote controller
 //Criar um get e post para elas
