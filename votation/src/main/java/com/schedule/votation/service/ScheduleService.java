@@ -19,4 +19,7 @@ public class ScheduleService {
     public Optional<ScheduleEntity> getSchedule(Long id){
         return scheduleRepository.findById(id);
     }
+    public void deleteSchedule(Long id){
+      repository.deleteById(id);
+    }
 }
