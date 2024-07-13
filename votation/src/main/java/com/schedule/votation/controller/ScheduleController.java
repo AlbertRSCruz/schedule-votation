@@ -15,7 +15,7 @@ public class ScheduleController {
     @Autowired
     ScheduleService scheduleService;
     @GetMapping("/{id}")
-    public Optional<ScheduleEntity> getSchedule(@PathVariable Long id) {
+    public ScheduleEntity getSchedule(@PathVariable Long id) {
         return scheduleService.getSchedule(id);
 
     }

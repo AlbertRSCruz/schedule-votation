@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class UserEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -27,4 +28,6 @@ public class UserEntity {
     public void setName(String name) {
         this.name = name;
     }
+
+
 }
